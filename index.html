@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Melody example: chatting</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
   </head>
 
   <style>
@@ -27,8 +28,8 @@
       var chat = document.getElementById("chat");
       var text = document.getElementById("text");
       var now = function () {
-        var iso = new Date().toISOString();
-        return iso.split("T")[1].split(".")[0];
+        var date = moment().format('LT');
+        return date;
       };
       ws.onmessage = function (msg) {
         var line =  now() + " " + msg.data + "\n";
