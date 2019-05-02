@@ -1,5 +1,5 @@
 # golang-chat
-For studying WebSocket and Gokang for me.
+For studying WebSocket and Golang for me.
 Use [olahol/melody](https://github.com/olahol/melody) and [gin-gonic/gin](https://github.com/gin-gonic/gin) .
 
 ## Prerequisite
