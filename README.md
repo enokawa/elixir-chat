@@ -1,1 +1,1 @@
-# elixir-chat
+# golang-chat
