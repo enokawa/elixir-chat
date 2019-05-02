@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   golang-chat:
-    image: golang-chat:0.4
+    image: enokawa/golang-chat:0.4
     ports:
       - "5000:5000"
     volumes:
