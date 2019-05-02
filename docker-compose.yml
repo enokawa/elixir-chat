@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+
+  golang-chat:
+    image: golang-chat:0.4
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src/:/go/src/api/
+    working_dir: /go/src/api/
+    command: go run /go/src/api/main.go
